@@ -1,5 +1,6 @@
 import About from '@/components/about/page'
 import Contact from '@/components/contact/Contact'
+import Education from '@/components/education/Education'
 import HeroSection from '@/components/hero/HeroSection'
 import Navbar from '@/components/navbar/Navbar'
 import Projects from '@/components/project/Project'
@@ -13,6 +14,7 @@ function page() {
     <HeroSection/>
     
     <Skills/>
+    <Education/>
     <Projects/>
     <Contact/>
     </>
