@@ -70,7 +70,7 @@ function HeroSection() {
           <img
             src="/vk.jpg"
             alt="Vikas Rathore"
-            className="w-[80%] md:w-[90%] lg:w-[75%] max-w-md rounded-xl shadow-lg object-cover"
+            className="w-[100%] md:w-[90%] lg:w-[75%] lg:max-w-md rounded-xl shadow-lg object-cover"
           />
         </motion.div>
       </div>
