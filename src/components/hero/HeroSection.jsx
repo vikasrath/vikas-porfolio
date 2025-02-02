@@ -63,7 +63,7 @@ function HeroSection() {
         <motion.div
           initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
           whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
           viewport={{ once: false, amount: 0.5 }}
           className="w-full md:w-1/2 flex justify-center"
         >
