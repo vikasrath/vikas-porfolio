@@ -4,7 +4,7 @@ import { SiNextdotjs, SiTailwindcss, SiC, SiCplusplus, SiReact } from "react-ico
 
 function About() {
   return (
-    <div className="w-full bg-[#0A0B14] text-white py-16 px-4 flex flex-col items-center">
+    <div id="about" className="w-full bg-[#0A0B14] text-white py-16 px-4 flex flex-col items-center">
       {/* Heading */}
       <h1 className="text-5xl font-bold mb-6 text-center">WHO I AM</h1>
       <p className="max-w-3xl text-lg text-center mb-10">

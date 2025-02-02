@@ -12,10 +12,10 @@ function Navbar() {
             <span className="ml-3 text-xl">Vikas Rathore</span>
           </a>
           <nav className="md:ml-auto flex flex-wrap items-center  justify-center text-xl font-medium">
-            <a className="mr-5 "> Who I'm</a>
-            <a className="mr-5 ">Skills</a>
-            <a className="mr-5 ">Projects</a>
-            <a className="mr-5 ">Education</a>
+            <a href='#about' className="mr-5 hover:text-yellow-500 "> Who I'm</a>
+            <a href='#skills' className="mr-5 hover:text-yellow-500 ">Skills</a>
+            <a href='#projects' className="mr-5 hover:text-yellow-500 ">Projects</a>
+            <a href= "#education" className="mr-5  hover:text-yellow-500">Education</a>
           </nav>
           <button className="inline-flex items-center  border border-white py-1 px-3 focus:outline-none ext-2xl font-bold  mt-4 md:mt-0 rounded-full bg-yellow-400/20 text-yellow-400 ">Contact
             <svg fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">

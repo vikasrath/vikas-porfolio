@@ -1,6 +1,9 @@
+"use client"
+
 import React from "react";
 import { FaReact, FaNodeJs, FaDatabase,  FaGitAlt, FaHtml5, FaCss3Alt, FaJs, FaGithub } from "react-icons/fa";
 import { SiNextdotjs, SiTailwindcss, SiC, SiCplusplus, SiReact } from "react-icons/si";
+import { motion } from "framer-motion";
 
 function Skills() {
   const skills = [
@@ -20,7 +23,7 @@ function Skills() {
   ];
 
   return (
-    <div className="w-full bg-[#0A0B14] border-t-2 border-b-2  shadow-2xl shadow-white border-white text-white py-16 px-4 flex flex-col items-center">
+    <div id="skills" className=" w-full bg-[#0A0B14] border-t-2 border-b-2  shadow-2xl shadow-white border-white text-white py-16 px-4 flex flex-col items-center">
       {/* Heading */}
       <h1 className="text-5xl font-bold mb-6 text-center text-yellow-400">MY SKILLS</h1>
       <p className="max-w-3xl text-lg text-center mb-10">
@@ -30,13 +33,16 @@ function Skills() {
       {/* Skills Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full max-w-5xl">
         {skills.map((skill, index) => (
-          <div
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
             key={index}
             className="flex flex-col items-center p-6 rounded-xl bg-[#131622] shadow-lg transform hover:scale-105 transition"
           >
             <div className="text-5xl mb-3">{skill.icon}</div>
             <p className="text-lg font-semibold">{skill.name}</p>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>
