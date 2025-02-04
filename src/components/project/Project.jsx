@@ -56,7 +56,7 @@ function Projects() {
                             {/* Overlay for Button */}
                             <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-[#0A0B14] to-transparent p-4">
                                 <a
-                                    href="https://mttf-next-app.vercel.app"
+                                    href="https://mttf.vercel.app"
                                     className="px-6 py-3 text-lg font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-3xl transition duration-300 ease-in-out transform hover:scale-105 hover:from-yellow-500 hover:to-yellow-700"
                                 >
                                     View Project
