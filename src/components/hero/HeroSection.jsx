@@ -6,7 +6,7 @@ import Image from "next/image";
 
 function HeroSection() {
   return (
-    <div className="w-full min-h-screen bg-[#0A0B14] overflow-hidden flex items-center justify-center">
+    <div className="w-full min-h-screen bg-[#0B0A1A] overflow-hidden flex items-center justify-center">
       <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8 py-10">
         {/* Left Section (Text) */}
         <div className="text-white flex flex-col gap-4 text-center md:text-left w-full md:w-1/2">
@@ -68,7 +68,7 @@ function HeroSection() {
           className="w-full md:w-1/2 flex justify-center"
         >
           <img
-            src="/vk.jpg"
+            src="/mying.jpg"
             alt="Vikas Rathore"
             className="w-[100%] md:w-[90%] lg:w-[75%] lg:max-w-md rounded-xl shadow-lg object-cover"
           />
