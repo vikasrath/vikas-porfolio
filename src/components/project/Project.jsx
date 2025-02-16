@@ -3,6 +3,7 @@ import soloweb from "../../../public/soloweb.jpg"
 import mttf from "../../../public/mm.jpg"
 import Image from 'next/image';
 import Link from 'next/link';
+import FreelancingSection from '../Freelancing/FreelancingSection';
 
 function Projects() {
     return (
@@ -66,6 +67,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
+           <FreelancingSection/>
         </section>
     );
 }
