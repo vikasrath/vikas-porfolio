@@ -2,7 +2,7 @@
 
 import sendMail from '@/utils/sendMail';
 import React, { useState } from 'react';
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaTwitter, FaLinkedinIn, FaInstagram } from 'react-icons/fa';
 
 function Contact() {
   
@@ -74,43 +74,39 @@ function Contact() {
 
         {/* Social Media Links */}
         <div className="mt-12">
-          <h3 className="text-xl font-semibold text-center text-black mb-4">
+          <h3 className="text-xl font-semibold text-center text-black mb-2">
             Connect with me
           </h3>
+          <p className='text-gray-800 text-center mb-4'>vikasrathote01322@gmail.com</p>
           <div className="flex justify-center space-x-6">
             <a
               href="https://www.facebook.com/yourprofile"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#3b5998] transition duration-300"
+              className="text-[#3b5998] transition duration-300"
             >
-              <FaFacebookF size={24} />
+              <FaGithub size={24} />
             </a>
+           
             <a
-              href="https://twitter.com/yourprofile"
+              href="https://www.linkedin.com/in/vikas-rathore-a799432b9/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#00acee] transition duration-300"
-            >
-              <FaTwitter size={24} />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/yourprofile"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#0e76a8] transition duration-300"
+              className="text-[#0e76a8] transition duration-300"
             >
               <FaLinkedinIn size={24} />
             </a>
             <a
-              href="https://www.instagram.com/yourprofile"
+              href="https://www.instagram.com/vikas.rathore0/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-gray-500 hover:text-[#e4405f] transition duration-300"
+              className="text-[#e4405f] transition duration-300"
             >
               <FaInstagram size={24} />
             </a>
+           
           </div>
+        
         </div>
       </div>
     </section>

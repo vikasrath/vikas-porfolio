@@ -2,7 +2,6 @@
 
 import React from "react";
 import { motion } from "motion/react";
-import Image from "next/image";
 
 function HeroSection() {
   return (
@@ -50,9 +49,9 @@ function HeroSection() {
             viewport={{ once: false, amount: 0.5 }}
             className="flex sm:flex-row flex-col gap-4 lg:mt-4 mt-2"
           >
-            <button className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer transition-all duration-300 hover:shadow-xl hover:brightness-110">
+            <a href="#contact" className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer transition-all duration-300 hover:shadow-xl hover:brightness-110">
               Hire Me
-            </button>
+            </a>
             <button className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold outline outline-2 rounded-md transition-all duration-300 hover:bg-white hover:text-black">
               About Me
             </button>
