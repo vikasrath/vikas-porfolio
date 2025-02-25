@@ -49,12 +49,20 @@ function HeroSection() {
             viewport={{ once: false, amount: 0.5 }}
             className="flex sm:flex-row flex-col gap-4 lg:mt-4 mt-2"
           >
-            <a href="#contact" className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer transition-all duration-300 hover:shadow-xl hover:brightness-110">
-              Hire Me
+
+            <a
+              href="/resume.pdf"
+              download="Vikas_Resume.pdf"
+              className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold 
+             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
+             text-white rounded-full shadow-lg 
+             transition-all duration-300 ease-in-out 
+             hover:scale-105 hover:shadow-xl 
+             hover:from-pink-500 hover:via-purple-500 hover:to-blue-500"
+            >
+              🚀 Download Resume
             </a>
-            <button className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold outline outline-2 rounded-md transition-all duration-300 hover:bg-white hover:text-black">
-              About Me
-            </button>
+
           </motion.div>
         </div>
 
