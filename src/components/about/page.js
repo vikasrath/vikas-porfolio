@@ -1,7 +1,4 @@
 import React from "react";
-import { FaGithub, FaReact, FaNodeJs, FaJs, FaHtml5, FaCss3Alt, FaDatabase, FaGitAlt } from "react-icons/fa";
-import { SiNextdotjs, SiTailwindcss, SiC, SiCplusplus, SiReact } from "react-icons/si";
-
 function About() {
   return (
     <div id="about" className="w-full bg-[#0A0B14] text-white py-16 px-4 flex flex-col items-center">

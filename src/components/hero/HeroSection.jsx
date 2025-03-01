@@ -75,7 +75,7 @@ function HeroSection() {
           className="w-full md:w-1/2 flex justify-center"
         >
           <img
-            src="/mying.jpg"
+            src="/myimg3.jpg"
             alt="Vikas Rathore"
             className="w-[100%] md:w-[90%] lg:w-[75%] lg:max-w-md rounded-xl shadow-lg object-cover"
           />
