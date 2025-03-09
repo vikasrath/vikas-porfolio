@@ -12,10 +12,10 @@ function page() {
     <>
     <Navbar/>
     <HeroSection/>
-    
+    <Projects/>
     <Skills/>
     <Education/>
-    <Projects/>
+    
     <Contact/>
     
     </>
