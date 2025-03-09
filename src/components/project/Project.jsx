@@ -28,7 +28,7 @@ function Projects() {
                     <div className="md:w-full grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-28  p-16">
                         {/* Project Card 1 */}
                         <PinContainer href="https://solocorp.org" title="SoloWeb">
-                            <div className="relative h-96 w-96 p-8 bg-gradient-to-br from-[#0A0B14] to-[#1E1F2B] rounded-2xl shadow-lg p-6 border border-gray-700 transition-transform duration-300 hover:scale-105 flex flex-col justify-between">
+                            <div className="relative h-96 w-96 p-8 bg-gradient-to-br from-[#0A0B14] to-[#1E1F2B] rounded-2xl shadow-lg  border border-gray-700 transition-transform duration-300 hover:scale-105 flex flex-col justify-between">
 
                                 {/* Title */}
                                 <h1 className="text-2xl font-bold text-white mb-2">Solocorp</h1>
