@@ -4,10 +4,11 @@ import mttf from "../../../public/mm.jpg"
 import Image from 'next/image';
 import Link from 'next/link';
 import FreelancingSection from '../Freelancing/FreelancingSection';
+import { PinContainer } from '../ui/3d-pin';
 
 function Projects() {
     return (
-        <section id="projects" className="py-20 bg-[#0A0B14]">
+        <section id="projects" className="py-20 bg-[#0A0B14] overflow-hidden ">
             <div className="max-w-7xl mx-auto px-6">
                 {/* Title and Description */}
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-10">
@@ -24,50 +25,65 @@ function Projects() {
                     </div>
 
                     {/* Left Side (Projects Gallery) */}
-                    <div className="md:w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <div className="md:w-full grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-2 gap-8 gap-y-28  p-16">
                         {/* Project Card 1 */}
-                        <div className="relative bg-[#eaecfa] shadow-md overflow-hidden rounded-xl">
-                            {/* Image Background */}
-                            <Image
-                                src={soloweb}
-                                alt="Project 1"
-                                className="w-full h-[600px] rounded-3xl object-cover object-top opacity-40" // Reduced opacity for the background image
-                            />
+                        <PinContainer href="https://solocorp.org" title="SoloWeb">
+                            <div className="relative h-96 w-96 p-8 bg-gradient-to-br from-[#0A0B14] to-[#1E1F2B] rounded-2xl shadow-lg p-6 border border-gray-700 transition-transform duration-300 hover:scale-105 flex flex-col justify-between">
 
-                            {/* Overlay for Button */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-[#0A0B14] to-transparent p-4">
+                                {/* Title */}
+                                <h1 className="text-2xl font-bold text-white mb-2">Solocorp</h1>
+                                <p>Developed as a Freelancer</p>
+
+                                {/* Description in Bullet Points */}
+                                <ul className="text-gray-300 text-sm space-y-2">
+                                    <li>✔️ Register your business under government regulations.</li>
+                                    <li>✔️ Get legal trademarks and copyrights.</li>
+                                    <li>✔️ Design professional logos and branding.</li>
+                                    <li>✔️ Hassle-free documentation and licensing.</li>
+                                    <li>✔️ Trusted by startups and entrepreneurs.</li>
+                                </ul>
+
+                                {/* Button */}
                                 <a
-                                    href="https://www.solocorp.org"
-                                    className="px-6 py-3 text-lg font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-3xl transition duration-300 ease-in-out transform hover:scale-105 hover:from-yellow-500 hover:to-yellow-700"
+                                    href="https://solocorp.org"
+                                    className="w-full mt-6 text-center py-2 bg-[#98FF98] text-black text-sm font-semibold rounded-lg transition duration-300 hover:bg-[#98FF98]/90"
                                 >
-                                    View Project
+                                    Visit Website
                                 </a>
                             </div>
-                        </div>
+                        </PinContainer>
 
                         {/* Project Card 2 */}
-                        <div className="relative p-6 rounded-3xl bg-[#eaecfa] shadow-md overflow-hidden">
-                            {/* Image Background */}
-                            <Image
-                                src={mttf}
-                                alt="Project 1"
-                                className="w-full h-[600px] rounded-3xl object-cover object-top opacity-50" // Reduced opacity for the background image
-                            />
+                        <PinContainer href="https://mttfhub.com" title="MathTech Thinking Foundation">
+                            <div className="relative h-96 w-96 bg-gradient-to-br from-[#0A0B14] to-[#1E1F2B] rounded-2xl shadow-lg p-6 border border-gray-700 transition-transform duration-300 hover:scale-105 flex flex-col justify-between">
 
-                            {/* Overlay for Button */}
-                            <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-t from-[#0A0B14] to-transparent p-4">
+                                {/* Title */}
+                                <h1 className="text-2xl font-bold text-white mb-2">MathTech Thinking Foundation</h1>
+                                <p>Internship </p>
+
+                                {/* Description in Bullet Points */}
+                                <ul className="text-gray-300 text-sm space-y-2">
+                                    <li>✔️ A platform that promotes math & tech education.</li>
+                                    <li>✔️ Offers mentorship, courses, and career guidance.</li>
+                                    <li>✔️ Provides valuable resources for students and professionals.</li>
+                                    <li>✔️ Focuses on research, innovation, and community learning.</li>
+                                    <li>✔️ Trusted by educators, learners, and industry professionals.</li>
+                                </ul>
+
+                                {/* Button */}
                                 <a
                                     href="https://mttfhub.com"
-                                    className="px-6 py-3 text-lg font-semibold bg-gradient-to-r from-yellow-400 to-yellow-600 text-white rounded-3xl transition duration-300 ease-in-out transform hover:scale-105 hover:from-yellow-500 hover:to-yellow-700"
+                                    className="w-full mt-6 text-center py-2 bg-[#98FF98] text-black text-sm font-semibold rounded-lg transition duration-300 hover:bg-[#98FF98]/90"
                                 >
-                                    View Project
+                                    Visit Website
                                 </a>
                             </div>
-                        </div>
+                        </PinContainer>
+
                     </div>
                 </div>
             </div>
-           <FreelancingSection/>
+            <FreelancingSection />
         </section>
     );
 }
