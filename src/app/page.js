@@ -15,7 +15,6 @@ function page() {
     <Projects/>
     <Skills/>
     <Education/>
-    
     <Contact/>
     
     </>

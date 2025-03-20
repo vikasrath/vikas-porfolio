@@ -51,7 +51,7 @@ function HeroSection() {
           >
 
             <a
-              href="/resume.pdf"
+              href="/VikasResume.pdf"
               download="Vikas_Resume.pdf"
               className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold 
              bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
