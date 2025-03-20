@@ -16,7 +16,7 @@ export default function FreelancingSection() {
             <div className="max-w-7xl mx-auto px-6 text-center">
                 {/* Title */}
                 <h2 className="text-4xl font-bold mb-4">
-                    Hire Me as a <span className="text-yellow-500">Freelancer</span>
+                    what We  <span className="text-yellow-500">Offer</span>
                 </h2>
                 <p className="text-lg max-w-2xl mx-auto mb-6">
                     I am a skilled web developer specializing in React.js, Next.js, and full-stack development. 
