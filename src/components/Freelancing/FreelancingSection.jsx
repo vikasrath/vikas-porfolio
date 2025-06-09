@@ -6,7 +6,6 @@ import {
   FaGlobe,
   FaBriefcase,
 } from "react-icons/fa";
-import { PinContainer } from "../ui/3d-pin";
 
 const services = [
   {
@@ -42,6 +41,7 @@ const services = [
 ];
 
 export default function FreelancingSection() {
+   
   return (
     <section id="freelancing" className="py-20 pb-0 bg-[#0A0B14] text-white">
       <div className="max-w-7xl mx-auto px-6 text-center">
@@ -80,96 +80,98 @@ export default function FreelancingSection() {
             responsive, custom-built, and lightning fast.
           </p>
 
-          <div class="sm:flex sm:flex-col sm:align-center lg:p-10">
-            <div class="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
+          <div className="sm:flex sm:flex-col sm:align-center lg:p-10">
+            <div className="mt-12 space-y-3 sm:mt-16 sm:space-y-0 sm:grid sm:grid-cols-3 sm:gap-6 md:max-w-5xl md:mx-auto xl:grid-cols-3">
               {/* <!-- Portfolio Website --> */}
 
-              <div class="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
-                <div class="p-6">
-                  <h2 class="text-2xl font-bold font-serif text-gray-800">
+              <div className="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold font-serif text-gray-800">
                     Portfolio Website
                   </h2>
-                  <p class="mt-2 text-gray-600 text-base leading-relaxed">
+                  <p className="mt-2 text-gray-600 text-base leading-relaxed">
                     Perfect for individuals who want to showcase their skills,
                     projects, and contact info.
                   </p>
-                  <p class="mt-6">
-                    <span class="text-4xl font-extrabold text-indigo-600 tracking-tight">
+                  <p className="mt-6">
+                    <span className="text-4xl font-extrabold text-indigo-600 tracking-tight">
                       ₹1499
                     </span>
                   </p>
                   <a
-                    href="#"
-                    class="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
+                    target="_blank"
+                    href={`https://wa.me/917009191019?text=${encodeURIComponent(`Hello, I am interested in getting a Portfolio Website developed. Please provide more details.`)}`}
+                    className="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
                   >
                     Get Portfolio Website
                   </a>
                 </div>
 
-                <div class="bg-slate-50 pt-5 pb-6 px-6">
-                  <h3 class="text-sm font-bold tracking-wider uppercase text-gray-700">
+                <div className="bg-slate-50 pt-5 pb-6 px-6">
+                  <h3 className="text-sm font-bold tracking-wider uppercase text-gray-700">
                     What's included
                   </h3>
-                  <ul class="mt-4 space-y-2 text-base text-gray-600">
-                    <li class="  text-left">
+                  <ul className="mt-4 space-y-2 text-base text-gray-600">
+                    <li className="  text-left">
                       <p>• 3+ pages (Home, About, Contact)</p>
                     </li>
-                    <li class="  text-left">
+                    <li className="  text-left">
                       <p>• Mobile Responsive</p>
                     </li>
-                    <li class="  text-left">
+                    <li className="  text-left">
                       <p>• Fast & Smooth performance</p>
                     </li>
-                    <li class="  text-left">
+                    <li className="  text-left">
                       <p>• Custom design (No templates)</p>
                     </li>
-                    <li class="  text-left">
+                    <li className="  text-left">
                       <p>• Contact form or direct message setup</p>
                     </li>
                   </ul>
                 </div>
               </div>
 
-              <div class="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
-                <div class="p-6">
-                  <h2 class="text-2xl font-bold font-serif text-gray-800">
+              <div className="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold font-serif text-gray-800">
                     Landing Page
                   </h2>
-                  <p class="mt-2 text-gray-600 text-base leading-relaxed">
+                  <p className="mt-2 text-gray-600 text-base leading-relaxed">
                     Ideal for promoting one service, product, or idea with focus
                     on conversion.
                   </p>
-                  <p class="mt-6">
-                    <span class="text-4xl font-extrabold text-indigo-600 tracking-tight">
+                  <p className="mt-6">
+                    <span className="text-4xl font-extrabold text-indigo-600 tracking-tight">
                       ₹1499
                     </span>
                   </p>
                   <a
-                    href="#"
-                    class="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
+                    target="_blank"
+                    href={`https://wa.me/917009191019?text=${encodeURIComponent(`Hello, I am interested in getting a Landing Page developed. Please provide more details.`)}`}
+                    className="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
                   >
                     Get Landing Page
                   </a>
                 </div>
 
-                <div class="bg-slate-50 pt-5 pb-6 px-6">
-                  <h3 class="text-sm font-bold tracking-wider uppercase text-gray-700">
+                <div className="bg-slate-50 pt-5 pb-6 px-6">
+                  <h3 className="text-sm font-bold tracking-wider uppercase text-gray-700">
                     What's included
                   </h3>
-                  <ul class="mt-4 space-y-2 text-base text-gray-600">
-                    <li class="text-left">
+                  <ul className="mt-4 space-y-2 text-base text-gray-600">
+                    <li className="text-left">
                       <span>• Up to 3 sections (Hero, Features, CTA)</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Speed optimized & SEO friendly</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Custom design (No templates)</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Email capture / WhatsApp </span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Mobile-first UI</span>
                     </li>
                   </ul>
@@ -177,46 +179,47 @@ export default function FreelancingSection() {
               </div>
 
               {/* <!-- Full Custom Website --> */}
-              <div class="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
-                <div class="p-6">
-                  <h2 class="text-2xl font-bold font-serif text-gray-800">
+              <div className="border border-slate-200 rounded-2xl shadow-md overflow-hidden hover:shadow-lg transition duration-300 bg-white">
+                <div className="p-6">
+                  <h2 className="text-2xl font-bold font-serif text-gray-800">
                     Full Custom Website
                   </h2>
-                  <p class="mt-2 text-gray-600 text-base leading-relaxed">
+                  <p className="mt-2 text-gray-600 text-base leading-relaxed">
                     Best for businesses looking for a full website tailored to
                     their brand.
                   </p>
-                  <p class="mt-6">
-                    <span class="text-4xl font-extrabold text-indigo-600 tracking-tight">
+                  <p className="mt-6">
+                    <span className="text-4xl font-extrabold text-indigo-600 tracking-tight">
                       Starting ₹4999
                     </span>
                   </p>
                   <a
-                    href="#"
-                    class="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
+                    target="_blank"
+                    href={`https://wa.me/917009191019?text=${encodeURIComponent(`Hello, I am interested in getting a Full Custom Website developed. Please provide more details.`)}`}
+                    className="mt-6 inline-block w-full rounded-md bg-indigo-600 py-2 px-4 text-sm font-semibold text-white text-center hover:bg-indigo-700 transition duration-200"
                   >
                     Get Business Website
                   </a>
                 </div>
 
-                <div class="bg-slate-50 pt-5 pb-6 px-6">
-                  <h3 class="text-sm font-bold tracking-wider uppercase text-gray-700">
+                <div className="bg-slate-50 pt-5 pb-6 px-6">
+                  <h3 className="text-sm font-bold tracking-wider uppercase text-gray-700">
                     What's included
                   </h3>
-                  <ul class="mt-4 space-y-2 text-base text-gray-600">
-                    <li class="text-left">
+                  <ul className="mt-4 space-y-2 text-base text-gray-600">
+                    <li className="text-left">
                       <span>• 5–10 pages or more</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Admin panel (on demand)</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Responsive + Fast + SEO Friendly</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Tailor-made design with brand colors</span>
                     </li>
-                    <li class="text-left">
+                    <li className="text-left">
                       <span>• Integrated contact & service forms</span>
                     </li>
                   </ul>
