@@ -5,80 +5,65 @@ import { motion } from "motion/react";
 
 function HeroSection() {
   return (
-    <div className="w-full min-h-screen bg-[#0B0A1A] overflow-hidden flex items-center justify-center">
-      <div className="container mx-auto px-4 flex flex-col-reverse md:flex-row items-center gap-8 py-10">
-        {/* Left Section (Text) */}
-        <div className="text-white flex flex-col gap-4 text-center md:text-left w-full md:w-1/2">
-          <motion.h1
-            initial={{ opacity: 0, x: -100, scale: 0.9 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: false, amount: 0.5 }}
-            className="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-semibold"
-          >
-            Hi there, I am
-          </motion.h1>
+    <div className="relative w-full min-h-screen overflow-hidden bg-[#0B0A1A] flex items-center justify-start px-6 md:px-16 py-20 md:py-0">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/myimg3.jpg"
+          alt="Background"
+          className="w-full h-full object-cover  opacity-25"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
+      </div>
 
-          <motion.h1
-            initial={{ opacity: 0, x: -100, scale: 0.9 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.4 }}
-            viewport={{ once: false, amount: 0.5 }}
-            className="xl:text-7xl lg:text-6xl md:text-5xl text-4xl font-semibold bg-text"
-          >
-            Vikas Rathore
-          </motion.h1>
-
-          <motion.p
-            initial={{ opacity: 0, x: 100, scale: 0.95 }}
-            whileInView={{ opacity: 1, x: 0, scale: 1 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.6 }}
-            viewport={{ once: false, amount: 0.5 }}
-            className="lg:text-3xl sm:text-xl text-lg lg:my-6 my-2"
-          >
-            I am an experienced full-stack developer with 1+ years of expertise
-            in React.js, NestJS, Node.js, Express.js, JavaScript, C++, and some
-            React Native experience.
-          </motion.p>
-
-          {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
-            viewport={{ once: false, amount: 0.5 }}
-            className="flex sm:flex-row flex-col gap-4 lg:mt-4 mt-2"
-          >
-
-            <a
-              href="/FullStack-Resume.pdf"
-              download="Vikas_Resume.pdf"
-              className="md:px-8 px-4 md:py-4 py-2 md:text-xl text-lg font-semibold 
-             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 
-             text-white rounded-full shadow-lg 
-             transition-all duration-300 ease-in-out 
-             hover:scale-105 hover:shadow-xl 
-             hover:from-pink-500 hover:via-purple-500 hover:to-blue-500"
-            >
-              🚀 Download Resume
-            </a>
-
-          </motion.div>
-        </div>
-
-        {/* Right Section (Image) */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
-          whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: false, amount: 0.5 }}
-          className="w-full md:w-1/2 flex justify-center"
+      {/* Foreground Content */}
+      <div className="relative z-10 flex flex-col gap-1 md:gap-5 max-w-4xl w-full text-white text-left mt-48 md:mt-36">
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
         >
-          <img
-            src="/myimg3.jpg"
-            alt="Vikas Rathore"
-            className="w-[100%] md:w-[90%] lg:w-[75%] lg:max-w-md rounded-xl shadow-lg object-cover"
-          />
+          Hi there, I am
+        </motion.h1>
+
+        <motion.h1
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg"
+        >
+        Vikas Rathore
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="md:mt-1 sm:mt-2 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl"
+        >
+           Web & App Developer skilled in React.js, Node.js, React Native & full-stack development.
+        </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-4"
+        >
+          <a
+            href="/FullStack-Resume.pdf"
+            download="Vikas_Resume.pdf"
+            className="inline-block px-4 py-2 sm:px-6 sm:py-3 text-base sm:text-lg font-semibold rounded-full
+        bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
+        shadow-md hover:scale-105 transition-transform duration-300"
+          >
+            🚀 Download Resume
+          </a>
         </motion.div>
       </div>
     </div>
