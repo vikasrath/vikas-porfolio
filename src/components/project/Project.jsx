@@ -83,7 +83,7 @@ function Projects() {
                     </div>
                 </div>
             </div>
-            <FreelancingSection />
+            {/* <FreelancingSection /> */}
         </section>
     );
 }
