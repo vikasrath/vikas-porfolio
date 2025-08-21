@@ -67,7 +67,7 @@ function HeroSection() {
 
         <motion.div variants={itemVariants} className="mt-8">
           <a
-            href="/FullStack-Resume.pdf"
+            href="/vikas-resume.pdf"
             download="Vikas_Rathore_Resume.pdf"
             className="inline-flex items-center gap-2 px-8 py-4 text-base sm:text-lg font-bold rounded-full
             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
