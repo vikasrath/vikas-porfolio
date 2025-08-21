@@ -1,71 +1,85 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion"; // Note: Use framer-motion instead of motion/react
+import { FaDownload } from "react-icons/fa"; // Added for a better icon on the button
+
+// A subtle background component
+const BackgroundComponent = () => {
+  return (
+    <div className="absolute inset-0 z-0">
+      <div className="w-full h-full bg-[#0B0A1A]"></div>
+      <div className="absolute inset-0 bg-grid-white/[0.05] [mask-image:linear-gradient(to_bottom,transparent,white,transparent)]"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-black/80"></div>
+    </div>
+  );
+};
+
+// Animation variants for staggered reveal
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+};
 
 function HeroSection() {
   return (
-    <div className="relative w-full min-h-screen overflow-hidden bg-[#0B0A1A] flex items-center justify-start px-6 md:px-16 py-20 md:py-0">
-      {/* Background Image */}
-      <div className="absolute inset-0 z-0">
-        <img
-          src="/myimg3.jpg"
-          alt="Background"
-          className="w-full h-full object-cover  opacity-25"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black opacity-70"></div>
-      </div>
+    <div className="relative w-full min-h-screen flex items-center justify-center overflow-hidden bg-[#0B0A1A]">
+      <BackgroundComponent />
 
       {/* Foreground Content */}
-      <div className="relative z-10 flex flex-col gap-1 md:gap-5 max-w-4xl w-full text-white text-left mt-48 md:mt-36">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        className="relative z-10 flex flex-col items-center justify-center gap-4 text-center text-white px-6 md:px-16 py-20"
+      >
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight"
+          variants={itemVariants}
+          className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight tracking-wide text-gray-200"
         >
           Hi there, I am
         </motion.h1>
 
         <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg"
+          variants={itemVariants}
+          className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold bg-gradient-to-r from-blue-400 via-purple-500 to-pink-500 text-transparent bg-clip-text drop-shadow-lg"
         >
-        Vikas Rathore
+          Vikas Rathore
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.6 }}
-          viewport={{ once: true }}
-          className="md:mt-1 sm:mt-2 text-base sm:text-lg md:text-xl lg:text-2xl text-gray-200 max-w-2xl"
+          variants={itemVariants}
+          className="md:mt-4 text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-gray-300 max-w-3xl"
         >
-           Web & App Developer skilled in React.js, Node.js, React Native & full-stack development.
+          A passionate Web & App Developer skilled in React.js, Node.js, React Native & full-stack development.
         </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.8 }}
-          viewport={{ once: true }}
-          className="mt-4"
-        >
+        <motion.div variants={itemVariants} className="mt-8">
           <a
             href="/FullStack-Resume.pdf"
-            download="Vikas_Resume.pdf"
-            className="inline-block px-4 py-2 sm:px-6 sm:py-3 text-base sm:text-lg font-semibold rounded-full
-        bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
-        shadow-md hover:scale-105 transition-transform duration-300"
+            download="Vikas_Rathore_Resume.pdf"
+            className="inline-flex items-center gap-2 px-8 py-4 text-base sm:text-lg font-bold rounded-full
+            bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
+            shadow-lg hover:scale-105 transition-transform duration-300 group"
           >
-            🚀 Download Resume
+            <FaDownload className="text-xl group-hover:animate-bounce" />
+            <span className="relative">
+              Download Resume
+            </span>
           </a>
         </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 }
