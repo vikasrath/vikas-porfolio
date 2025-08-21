@@ -4,7 +4,7 @@ import React from "react";
 import { CheckCircle, ArrowRight } from "lucide-react";
 
 // Import your project screenshots (place them in public folder or assets)
-import solowebImg from "../../../public/solocorppic.png";
+import solowebImg from "../../../public/solopic.png";
 import mttfImg from "../../../public/mttfpic.png";
 import amanTailorImg from "../../../public/amantailorpis.png";
 
