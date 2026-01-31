@@ -67,13 +67,13 @@ function HeroSection() {
 
         <motion.div variants={itemVariants} className="mt-8">
           <a
-            href="/vikas-resume.pdf"
+            href="/Vikas-Resume-software.pdf"
             download="Vikas_Rathore_Resume.pdf"
             className="inline-flex items-center gap-2 px-8 py-4 text-base sm:text-lg font-bold rounded-full
             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
             shadow-lg hover:scale-105 transition-transform duration-300 group"
           >
-            
+
             <FaDownload className="text-xl group-hover:animate-bounce" />
             <span className="relative">
               Download Resume
