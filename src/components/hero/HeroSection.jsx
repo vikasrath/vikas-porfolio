@@ -73,6 +73,7 @@ function HeroSection() {
             bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white
             shadow-lg hover:scale-105 transition-transform duration-300 group"
           >
+            
             <FaDownload className="text-xl group-hover:animate-bounce" />
             <span className="relative">
               Download Resume
